@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* google icons */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  .material-symbols-outlined1 {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  #burg{
+    display: none;
+  }
+  /* navbar Header */
+.nav-container{
+    background-color: rgb(43, 226, 174);
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 20px;
+    padding-left: 70px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* Subnavs */
+.courses-list-container{
+    background-color: rgb(43, 226, 174);
+    opacity: 90%;
+    border-radius: 20%;
+    overflow: hidden;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-left: 3.6cm;
+    margin-top: -1cm;
+    box-shadow: 4px 4px 6px rgb(134, 132, 132);
+    transition: .5s;
+    opacity: 0;
+    padding-left: 30px;
+}
+.excersize-list-container{
+    background-color: rgb(43, 226, 174);
+    opacity: 90%;
+    border-radius: 20%;
+    overflow: scroll;
+    font-size: 1.5rem;
+    width: 270px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 15cm;
+    margin-top: -2.5cm;
+    box-shadow: 4px 4px 6px rgb(134, 132, 132);
+    transition: .5s;
+    padding-left: 30px;
+    align-items: center;
+    opacity: 0;
+}
+.excersize-list-container::-webkit-scrollbar{
+    display: none;
+}
+.more-list-container{
+    background-color: rgb(43, 226, 174);
+    opacity: 90%;
+    border-radius: 20%;
+    overflow: hidden;
+    font-size: 1.5rem;
+    width: 270px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 18cm;
+    margin-top: -4.3cm;
+    box-shadow: 4px 4px 6px rgb(134, 132, 132);
+    transition: .5s;
+    align-items: left;
+    padding-left: 20px;
+    opacity: 0;
+}
+
+.nav-icons:hover{
+    color: brown;
+    transition: .5s;
+    cursor: pointer;
+}
+.nav-icons{
+    color: black;
+    width: auto;
+}
+a{
+    text-decoration: none;
+}
+/* Introduction */
+.div-intro{
+    padding-left: 2cm;
+}
+.div-intro2{
+    padding-left: 2cm;
+    padding-top: 1cm;
+}
+.abjad{
+    text-align: right;
+    padding-right: 17cm;
+}
+/* explanation */
+.explanation{
+    width: 90%;
+    border-radius: 12px;
+    background-color: beige;
+    margin-left: 2cm;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 13px;
+}
+/* Quick reach */
+.explanation2{
+    width: 30%;
+    border-radius: 12px;
+    background-color: beige;
+    margin-left: 2cm;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 13px;
+}
+/* letter container (main page) */
+.letterscontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3cm;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2cm;
+    padding-top: 2cm;
+}
+/* 1st lesson Family */
+.familymembers{
+    display: flex;
+    flex-direction: row;
+    gap: 2cm;
+    justify-content: center;
+    align-items: center;
+}
+.describingfamily{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding-left: 1cm;
+    padding-top: 70px;
+    flex-wrap: wrap;
+}
+.phrase{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Titles */
+.container-lessontitle{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    padding-left: 1cm;
+    padding-top: 1cm;
+}
+.title-name{
+    margin-top: 8px;
+}
+
+/* footer */
+.a-followus{
+    text-decoration: underline;
+}
+.p-footer{
+    text-align: center;
+}
+footer{
+    padding-bottom: 1cm;
+}
+@media screen and (max-width: 500px){
+   
+    .nav-container{
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 10px;
+        max-height: 50px;
+    }
+    .nav-icons{
+        display: none;
+    }
+    .courses-list-container{
+        width: 150px;
+        height: 100px;
+        font-size: 19px;
+        margin-top: -7cm;
+        margin-left: 1cm;
+        opacity: 1;
+    }
+    .excersize-list-container{
+        width: 150px;
+        height: 100px;
+        font-size: 19px;
+        margin-left: 3cm;  
+    }
+    #burg{
+        display: block;
+    }
+    .intro{
+        max-width: 70%;
+        margin-top: -1cm;
+        opacity: 0;
+    }
+    .resourses{
+        flex-direction: column;
+        gap: 1cm;
+        position: fixed;
+        margin-left: .5cm;
+        padding-top: 3cm;
+        padding-bottom: 1cm;
+    }
+    .cat{
+        width: 200px;
+        height: 230px;
+        padding-top: -4cm;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .list-audiobooks{
+        gap: 6px;
+    }
+    .material-symbols-outlined{
+        display: flex;
+        flex-direction: row;
+    }
+    footer{
+        display: none;
+    }
+    #lang{
+        display: none;
+    }
+}

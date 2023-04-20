@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="data:image/png;base64,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">
+    <title>Learn Arabic For Free</title>
+</head>
+<body>
+    <!-- Header - NavBar-->
+    <header>
+        <nav>
+            <ul class="nav-container">
+                <span class="material-symbols-outlined" id="burg">
+                    menu
+                    </span>
+                <a href="index.html"><li class="nav-icons">Home</li></a>
+                <li class="nav-icons" id="freecourses">Free Courses 
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </li>
+                <a href="phrases.html" ><li class="nav-icons">Phrasebooks</li></a>
+                <a href="dialogue"><li class="nav-icons">Dialogues</li></a>
+                <li class="nav-icons" id="excersize">Exercises
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                </li>
+                <li class="nav-icons" id="more">More
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span> 
+                </li>
+                <a href="contact.html"><li class="nav-icons" > Contact Us </li></a>
+                <span class="material-symbols-outlined" id="lang">
+                    language
+                    </span>
+            </ul>
+            <img src="#" alt="" class="langs">
+        </nav>
+    </header>
+    <!--subnavs-->
+    <ul class="courses-list-container" id="courses-list-container">
+        <a href="howtoread.html"><li class="courses nav-icons"> How to read</li></a>
+        <a href="basicArabic.html"><li class="courses nav-icons">Basic Arabic</li></a>
+        <li class="courses nav-icons">Arabic Cases</li>
+    </ul>
+    
+    <div class="excersize-list-container" id="excersize-list-container">
+        <li class="nav-icons">Videos to learn Arabic</li>
+        <li class="nav-icons">Grammer Excersizes</li>
+        <li class="nav-icons">Vocabulary Excersizes</li>
+        <li class="nav-icons">Grammer Tables</li>
+    </div>
+
+    <div class="more-list-container" id="more-list-container">
+        <li class="nav-icons">Cartoons in Arabic</li>
+        <li class="nav-icons">Arabic Songs (no music)</li>
+        <li class="nav-icons">Comics in Arabic</li>
+        <li class="nav-icons">Arabic Podcasts</li>
+    </div>
+    <!--Introduction-->
+    <section class="intro">
+        <div class="div-intro">
+        <h1 style="color: crimson;">Learn Arabic Alphabet with audio.</h1>
+        <h3>To learn the letters you need to know the shape and the sounds of the letters.</h3>
+        <h3>Click <a href="https://youtu.be/8_60iWXl7dw">HERE </a>for a video tutorial if needed.</h3>
+        </div>
+        <div class="div-intro2">
+        <p class="p-intro">Notice the notes under each card, these are helpful as they give brief explanation helping you to memorise them.</p>
+        <p class="p-intro">After being familiar with the letter shapes, you can use this sentence to memorise the alphabet:</p>
+        <p class="abjad p-intro" >أبجد هوز حطي كلمن سعفص قرشت ثخذ ضغظ</p>
+        </div>
+    </section>
+    <!--Explanation-->
+    <section class="explanation">
+        <div class="div-intro2">
+            <li>You might notice that Arabic letters are written from right to left, unlike English and most languages.</li>
+            <li>You will notice NUMBERS written to represent how some letters sound like, you'll understand why by the end of the first lesson of this course. Good luck!</li>
+            <li>Unlike most languages, Arabic letters have names that are not just the sound they make...and the reason after this is quite interesting. If you want to know why click <a href="#">HERE</a>.</li>
+        </div>
+    </section>
+    <!--Quick reach-->
+    <section class="explanation2">
+        <div class="div-intro2">
+            <h2>Quick reach.</h2>
+            <h3>Go to:</h3>
+            <a href="#lesson1"><li>Lesson 1 (The Alphabet)</li></a>
+            <a href="#lesson2"><li>Lesson 2 (Tashkeel)</li></a>
+            <a href="#lesson3"><li>Lesson 3 (Reading)</li></a>
+        </div>
+    </section>
+    <!--First Lesson The Letters-->
+    <div class="container-lessontitle" id="lesson1">
+    <h1 style="color: chocolate;">First lesson: <h2 class="title-name">The Alphabet (Al-Abjadiyya)</h2></h1>
+    </div>
+        <div class="q-a">
+
+    <li style="font-style: italic; font-size: 2rem;">What is Al-Abjadiyya?</li>
+    <p>Comes from the word Abjad which is simply the first 5 letters ordered in an order called Al-Abjadiyya. The same word existed in the introduction of this page, specifically in the Arabic sentence wich lists the alphabet in the Al-Abjadiyya order. Need more help? <a href="#">Here</a>.</p>
+    <li style="font-style: italic; font-size: 2rem;">Note:</li><p>you can scroll down in some cards.</p>
+    <p>There are 28 letters in the Arabic alphabet, only 3 letters are vowels, so we will need "Tashkeel" to know how to read properly, which you'll learn in the next lesson.</p>
+    <p>Here is an audio that reads the Al-Abjadiyya:</p>
+    <audio src="#" controls class="fullabjadiyya">Listen</audio>
+    </div>
+    <!--Letters-->
+    <section class="letterscontainer">
+        <div class="cat">
+            <h2>Alif (A)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Ba2 (B)</h2>
+            <img src="#" alt="alif">
+            <li>what does the number 2 mean?</li>
+            <p>Represents the sound A' as in Apple</p>
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Jeem (J)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Dal (D)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Ha2 (H)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Waw (W)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Zai (Z)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>7a2 (7a)</h2>
+            <img src="#" alt="alif">
+            <li>What does the number 7 mean?</li>
+            <p>Represents the shape of the letter 7a2, so you don't confuse it with Ha2.</p>
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>TTa2 (TT)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Ya2 (I)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Kaf (K)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Lam (L)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Meem (M)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Noon (N)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Seen (S)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>3ain (3a)</h2>
+            <img src="#" alt="alif">
+            <li>What doe the number 3 mean?</li>
+            <p>Represents the shape of the letter 3, because there is no similar sound in english to describe it.</p>
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Fa2 (F)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Ssadd (SS)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>9af (9af)</h2>
+            <img src="#" alt="alif">
+            <li>what does the number 9 mean?</li>
+            <p>Represents the shape of the letter Qaf, that's how you don't mix the letter Kaff with Qaf.</p>
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Ra2 (R)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Sheen (Sh)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Ta2 (T)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Tha2 (Th)</h2>
+            <img src="#" alt="alif">
+            <p>As in Thief.</p>
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>5a2 (5a)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>THal (TH)</h2>
+            <img src="#" alt="alif">
+            <p>As in The.</p>
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>DDad (DD)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Alif (A)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+        <div class="cat">
+            <h2>Ghain (Gh)</h2>
+            <img src="#" alt="alif">
+            <audio src="#"></audio>
+        </div>
+
+    </section>
+
+    <!--2nd Lesson: Tashkil-->
+    
+    <div class="container-lessontitle" id="lesson2">
+        <h1 style="color: chocolate;">Second lesson: <h2 class="title-name">Tashkeel or (Al-7arakat)</h2></h1>
+        </div>
+            <div class="q-a">
+        <li style="font-style: italic; font-size: 2rem;">What is Tashkeel?</li>
+        <p>The shapes that are written with the letters to define more of it's sound, since there is only 3 vowels in Arabic alphabet. Need more help? <a href="#">Here</a>.</p>
+        <p>Here is an audio that reads the sentences:</p>
+        <audio src="#" controls class="fullabjadiyya">Listen</audio>
+        </div>
+        <!--Tashkeel-->
+        <section class="letterscontainer">
+            <div class="cat2">
+                <h2>Fat7a</h2>
+                <img src="#" alt="alif">
+            </div>
+            <div class="cat2">
+                <h2>DDammah</h2>
+                <img src="#" alt="alif">
+            </div>
+            <div class="cat2">
+                <h2>Kasrah</h2>
+                <img src="#" alt="alif">
+            </div>
+            <div class="cat2">
+                <h2>Sukoon</h2>
+                <img src="#" alt="alif">
+            </div>
+            </section>
+            <div class="video">
+            <video src="ta3lim.mp4" class="tashkeel-video" controls></video>
+                </div>
+
+        <!--3rd Lesson-->
+        <div class="container-lessontitle" id="lesson3">
+            <h1 style="color: chocolate;">Third lesson: <h2 class="title-name">Reading</h2></h1>
+            </div>
+                <div class="q-a">
+            <li style="font-style: italic; font-size: 2rem;">How To Read?</li>
+            <p>Start from right to left, notice Tashkeel.
+            <p>Here is an audio that reads the sentences, don't open it until you try by yourself first:</p>
+            <audio src="#" controls class="fullabjadiyya">Listen</audio>
+            </div>         
+            <!--Words-->
+            <div class="words">
+            <h2>أُمّيْ</h2>
+            <h2>سَرْيْرٌ</h2>
+            <h2>كِتابٌ</h2>
+            </div>
+            <h2 style="margin-left: 2cm; padding-bottom: 1cm;">Meaning: My mom, Bed, Book.</h2>
+
+            <h2 style="margin-left: 1cm;">You have finished the first course! get to the next one? <a href="basicArabic.html">Here</a>!!</h2>
+
+
+    <!--Footer-->
+    <footer style="padding-top: 30px;">
+        <p class="p-footer">follow us on <a class="a-followus" href="https://www.instagram.com/sarahbader648/">Instagram</a></p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
